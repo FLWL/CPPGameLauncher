@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\misc">
+      <UniqueIdentifier>{386ea6fd-7764-4ec9-aab0-361bc349927a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\patcher">
+      <UniqueIdentifier>{bbb7e499-c723-4908-ab26-56b6205663b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\patcher">
+      <UniqueIdentifier>{6c05ebb9-2352-4bae-8412-8827eb5a8c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\patcher\crypto">
+      <UniqueIdentifier>{20b9fd7e-6fd8-468b-9278-76885374da26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\patcher\crypto">
+      <UniqueIdentifier>{e8b32e01-177f-43cf-8ab4-7431e23ba6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\misc">
+      <UniqueIdentifier>{f4405a79-11ad-46af-b8b6-4c76d625ebd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{d15b9b45-8ad8-49e4-94b9-6fc0c7309862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{469ea968-3e73-4848-a893-756ed34eb9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\loaders">
+      <UniqueIdentifier>{1be34570-1817-4322-85de-247d91ee327e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\loaders">
+      <UniqueIdentifier>{1eeb4d30-9f42-4cda-aac8-e84f83da5063}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="patcher.h">
+      <Filter>Header Files\patcher</Filter>
+    </ClInclude>
+    <ClInclude Include="crc.h">
+      <Filter>Header Files\patcher\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="rsaverifier.h">
+      <Filter>Header Files\patcher\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256.h">
+      <Filter>Header Files\patcher\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="downloader.h">
+      <Filter>Header Files\patcher</Filter>
+    </ClInclude>
+    <ClInclude Include="compression.h">
+      <Filter>Header Files\patcher\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="newslabel.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="progressbar.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="pngloader.h">
+      <Filter>Header Files\gui\loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="fontloader.h">
+      <Filter>Header Files\gui\loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicscache.h">
+      <Filter>Header Files\gui\loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser.h">
+      <Filter>Header Files\patcher</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="patcher.cpp">
+      <Filter>Source Files\patcher</Filter>
+    </ClCompile>
+    <ClCompile Include="rsaverifier.cpp">
+      <Filter>Source Files\patcher\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256.cpp">
+      <Filter>Source Files\patcher\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="downloader.cpp">
+      <Filter>Source Files\patcher</Filter>
+    </ClCompile>
+    <ClCompile Include="newslabel.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="progressbar.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="compression.cpp">
+      <Filter>Source Files\patcher\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="pngloader.cpp">
+      <Filter>Source Files\gui\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="fontloader.cpp">
+      <Filter>Source Files\gui\loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicscache.cpp">
+      <Filter>Source Files\gui\loaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPPGameLauncher.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CPPGameLauncher.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="G:\Pictures\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="close_window.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="minimize_window.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window_active.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\minimize_window_active.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\minimize_window.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\minimize_window_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\play_button.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\play_button_active.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\play_button_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\progress_texture.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window_active.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\close_window_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\close_window.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\close_window_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\close_window_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\minimize_window.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\minimize_window_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\minimize_window_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\settings_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\fade.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\newslabel.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\progressindicator.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\play.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\play_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\play_disabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\play_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\fade.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\settings.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\settings_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\repair.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\repair_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\repair_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\about.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\about_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\about_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\continue.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\continue_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\continue_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\try_again.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\try_again_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\try_again_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\news_label.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\buttons\news_label_hovered.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rcdata3.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\TitilliumWeb-Regular.ttf" />
+    <Font Include="resources\TitilliumWeb-Bold.ttf" />
+  </ItemGroup>
+</Project>

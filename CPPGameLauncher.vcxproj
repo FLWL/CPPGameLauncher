@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D2051DF9-D1D3-465E-9277-37FEFF47839E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CPPGameLauncher</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>CPPGameLauncher</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>CPPGameLauncher</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>CPPGameLauncher</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Shared\Libraries\openssl-1.1.0f\include;C:\Shared\Libraries\zlib-1.2.11\include;C:\Shared\Libraries\curl-7.55.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-winssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Shared\Libraries\openssl-1.1.0f;C:\Shared\Libraries\zlib-1.2.11\builds\Debug;gdiplus.lib;C:\Shared\Libraries\curl-7.55.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-winssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libssl.lib;libcrypto.lib;zlibstaticd.lib;libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Shared\Libraries\openssl-static\include;C:\Shared\Libraries\zlib-1.2.11\include;C:\Shared\Libraries\curl-7.55.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-winssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86;C:\Shared\Libraries\openssl-static;C:\Shared\Libraries\zlib-1.2.11\builds\Release;C:\Shared\Libraries\curl-7.55.1\builds\libcurl-vc-x86-release-static-ipv6-sspi-winssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>WindowsCodecs.lib;libssl.lib;libcrypto.lib;zlibstatic.lib;libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Shared\Libraries\curl-7.55.1\include;C:\Shared\Libraries\zlib-1.2.11\include;C:\Shared\Libraries\openssl-1.1.0f\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="button.h" />
+    <ClInclude Include="compression.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="crc.h" />
+    <ClInclude Include="downloader.h" />
+    <ClInclude Include="fontloader.h" />
+    <ClInclude Include="graphicscache.h" />
+    <ClInclude Include="helper.h" />
+    <ClInclude Include="iniparser.h" />
+    <ClInclude Include="newslabel.h" />
+    <ClInclude Include="patcher.h" />
+    <ClInclude Include="pngloader.h" />
+    <ClInclude Include="progressbar.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="rsaverifier.h" />
+    <ClInclude Include="sha256.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="compression.cpp" />
+    <ClCompile Include="downloader.cpp" />
+    <ClCompile Include="fontloader.cpp" />
+    <ClCompile Include="graphicscache.cpp" />
+    <ClCompile Include="helper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="newslabel.cpp" />
+    <ClCompile Include="patcher.cpp" />
+    <ClCompile Include="pngloader.cpp" />
+    <ClCompile Include="progressbar.cpp" />
+    <ClCompile Include="rsaverifier.cpp" />
+    <ClCompile Include="sha256.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="init.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPPGameLauncher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="close_window.bmp" />
+    <Image Include="G:\Pictures\background.bmp" />
+    <Image Include="icon1.ico" />
+    <Image Include="minimize_window.bmp" />
+    <Image Include="resources\background.bmp" />
+    <Image Include="resources\background.png" />
+    <Image Include="resources\buttons\about.png" />
+    <Image Include="resources\buttons\about_hovered.png" />
+    <Image Include="resources\buttons\about_pressed.png" />
+    <Image Include="resources\buttons\button.png" />
+    <Image Include="resources\buttons\close_window.png" />
+    <Image Include="resources\buttons\close_window_hovered.png" />
+    <Image Include="resources\buttons\close_window_pressed.png" />
+    <Image Include="resources\buttons\continue.png" />
+    <Image Include="resources\buttons\continue_hovered.png" />
+    <Image Include="resources\buttons\continue_pressed.png" />
+    <Image Include="resources\buttons\fade.png" />
+    <Image Include="resources\buttons\minimize_window.png" />
+    <Image Include="resources\buttons\minimize_window_hovered.png" />
+    <Image Include="resources\buttons\minimize_window_pressed.png" />
+    <Image Include="resources\buttons\news_label.png" />
+    <Image Include="resources\buttons\news_label_hovered.png" />
+    <Image Include="resources\buttons\play.png" />
+    <Image Include="resources\buttons\play_disabled.png" />
+    <Image Include="resources\buttons\play_hovered.png" />
+    <Image Include="resources\buttons\play_pressed.png" />
+    <Image Include="resources\buttons\repair.png" />
+    <Image Include="resources\buttons\repair_hovered.png" />
+    <Image Include="resources\buttons\repair_pressed.png" />
+    <Image Include="resources\buttons\settings.png" />
+    <Image Include="resources\buttons\settings_hovered.png" />
+    <Image Include="resources\buttons\settings_pressed.png" />
+    <Image Include="resources\buttons\try_again.png" />
+    <Image Include="resources\buttons\try_again_hovered.png" />
+    <Image Include="resources\buttons\try_again_pressed.png" />
+    <Image Include="resources\close_window.bmp" />
+    <Image Include="resources\close_window.png" />
+    <Image Include="resources\close_window_active.bmp" />
+    <Image Include="resources\close_window_active.png" />
+    <Image Include="resources\close_window_hovered.png" />
+    <Image Include="resources\close_window_pressed.bmp" />
+    <Image Include="resources\fade.png" />
+    <Image Include="resources\icon.ico" />
+    <Image Include="resources\minimize_window.bmp" />
+    <Image Include="resources\minimize_window_active.bmp" />
+    <Image Include="resources\minimize_window_pressed.bmp" />
+    <Image Include="resources\newslabel.png" />
+    <Image Include="resources\play_button.bmp" />
+    <Image Include="resources\play_button_active.bmp" />
+    <Image Include="resources\play_button_pressed.bmp" />
+    <Image Include="resources\progressindicator.png" />
+    <Image Include="resources\progress_texture.bmp" />
+    <Image Include="small.ico" />
+    <Image Include="CPPGameLauncher.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rcdata3.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\TitilliumWeb-Bold.ttf" />
+    <Font Include="resources\TitilliumWeb-Regular.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
