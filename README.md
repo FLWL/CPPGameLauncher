@@ -2,11 +2,11 @@
 
 A game launcher/updater/patcher written in C++ for the Windows platform.
 
-For the accompanying patch creator, see: https://github.com/huvolk/CPPGameLauncher_PatchCreator
+For the accompanying patch creator, see: https://github.com/FLWL/CPPGameLauncher_PatchCreator
 
 # Example screenshot
 
-![Example screenshot](https://raw.githubusercontent.com/huvolk/CPPGameLauncher/master/misc/example_screenshot.png)
+![Example screenshot](https://raw.githubusercontent.com/FLWL/CPPGameLauncher/master/misc/example_screenshot.png)
 
 # Features
 
@@ -35,7 +35,7 @@ For the accompanying patch creator, see: https://github.com/huvolk/CPPGameLaunch
 2. Clone this repository, open the .sln file in Visual Studio
 3. Compile or acquire static libraries for zlib, OpenSSL and curl.
 4. From project properties in VS, make sure that a valid Windows SDK is selected, and correct the library and include search paths for aforementioned libraries.
-5. Configure the launcher by editing the "constants.h" file. Change the domain, public keys, etc. Also take look at the patch creator's repository and its readme: https://github.com/huvolk/CPPGameLauncher_PatchCreator
+5. Configure the launcher by editing the "constants.h" file. Change the domain, public keys, etc. Also take look at the patch creator's repository and its readme: https://github.com/FLWL/CPPGameLauncher_PatchCreator
 
 While the patch creator needs the private key in .der format, the launcher has hardcoded .pem public keys in its "constants.h". To generate a readable .pem format from the keypair.pem file generated during the patch creator setup, run the following command:
 
