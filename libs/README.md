@@ -14,8 +14,8 @@ Follow the instructions in the libcurl documentation for building on your platfo
 Step 2: Update CMakeLists.txt
 Update your CMakeLists.txt file to include the necessary libraries:
 
-cmake
-Copy code
+
+#-------------
 cmake_minimum_required(VERSION 3.15)
 
 project(CPPGameLauncher)
@@ -52,8 +52,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 Step 3: Build Your Project
 Now, open a terminal and navigate to your project directory:
 
-bash
-Copy code
+bash example: powershell vs2022
 mkdir build
 cd build
 cmake -A Win32 ..
